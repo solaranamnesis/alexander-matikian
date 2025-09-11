@@ -12,7 +12,7 @@
 \fancyfoot[C]{\arm{\bfseries\color{armeniaRed}\thepage}}
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand*\contentsname{\arm{Բովանդակության աղյուսակ}}
+
 \setlength{\emergencystretch}{100pt}
 \usepackage{tocloft}
 \cftsetindents{subsubsection}{3em}{7em}
@@ -58,7 +58,10 @@
 \defaultfontfeatures{Scale=MatchLowercase}
 \def\arraystretch{1.15}
 \AddToShipoutPictureBG{\includegraphics[width=\paperwidth,height=\paperheight]{ararat1.jpeg}}
+\interfootnotelinepenalty=10000
+
 \begin{document}
+\renewcommand*\contentsname{\arm{Բովանդակության աղյուսակ}}
 \renewcommand\thefootnote{\bfseries{\color{armeniaRed}\tiny\arabic{footnote}}}
 \let\oldfootnote\footnote
     \renewcommand{\footnote}[1]{\oldfootnote{\color{armeniaRed}\bfseries\small#1}}
@@ -623,6 +626,7 @@
 \begin{table}[H]
     \centering
     \arm
+    \bfseries
     \small
     \begin{tabular}{l l l}
         \emph{Բաբել․}  &  \emph{Ասոր․}         &  \emph{Պարսկ․}              \\ \hline
@@ -639,6 +643,7 @@
 \begin{table}[H]
     \centering
     \arm
+    \bfseries
     \small
     \begin{tabular}{l l}
         \emph{Յուն․}   &  \emph{Հայկ․}                              \\ \hline
